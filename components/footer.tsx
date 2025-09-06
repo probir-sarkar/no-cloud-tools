@@ -5,8 +5,8 @@ import { GithubIcon, TwitterIcon } from "./icons";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/50">
-      <div className="container py-8 md:py-12">
+    <footer className="border-t border-divider bg-muted/50">
+      <div className="container py-8 md:py-12 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold">PDF Tools</h3>
@@ -129,7 +129,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t">
+        <div className="mt-8 pt-8 border-t border-divider">
           <div className="text-center space-y-4">
             <h4 className="text-lg font-semibold">Support This Project</h4>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
@@ -174,9 +174,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="mt-8 pt-8 border-t border-divider flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-muted-foreground">
-            <span>© 2024 PDF Tools. All rights reserved.</span>
+            <span>© 2025 PDF Tools. All rights reserved.</span>
             <div className="flex items-center space-x-1">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-500 fill-current" />

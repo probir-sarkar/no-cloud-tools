@@ -1,3 +1,5 @@
+import { tools } from "./tools";
+
 export const siteConfig = {
   name: "OfflineTools",
   description:
@@ -19,32 +21,6 @@ export const siteConfig = {
       isExternal: true,
     },
   ],
-  navMenuItems: [
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "My Files",
-      href: "/files",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Sponsor Us",
-      href: "/sponsor",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
-  ],
   links: {
     github: "https://github.com/your-username/offlinetools",
     twitter: "https://twitter.com/offlinetools",
@@ -52,6 +28,7 @@ export const siteConfig = {
     discord: "https://discord.gg/your-community",
     sponsor: "https://github.com/sponsors/your-username",
   },
+  tools,
 };
 
 export type SiteConfig = typeof siteConfig;

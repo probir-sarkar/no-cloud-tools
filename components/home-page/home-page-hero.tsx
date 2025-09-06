@@ -19,16 +19,17 @@ import {
   Coffee,
   ArrowRight,
   Sparkles,
+  Award,
 } from "lucide-react";
 import Link from "next/link";
+import { badge, dot, icon, text } from "./primitive";
 const HomePageHero = () => {
   return (
     <section className="container py-16 md:py-24 text-center space-y-8 relative">
       {/* Animated background elements */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-yellow-400/20 to-red-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-gradient-to-r from-pink-400/20 to-blue-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
+      <div className="absolute inset-0 ">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full  filter blur-xl animate-pulse"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-yellow-400/20 to-red-600/20 rounded-full  filter blur-xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="space-y-6 max-w-4xl mx-auto relative">
@@ -41,7 +42,7 @@ const HomePageHero = () => {
         >
           Open Source • Privacy First • Offline Ready
         </Chip>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance bg-gradient-to-br from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent animate-fade-in">
+        <h1 className="text-5xl md:text-7xl leading-normal font-bold tracking-tight text-balance bg-gradient-to-br from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent animate-fade-in">
           Free PDF & Image Tools
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed animate-fade-in-delay">
@@ -76,20 +77,25 @@ const HomePageHero = () => {
 
       <div className="pt-12 space-y-6">
         <div className="flex flex-wrap items-center justify-center gap-8 text-sm">
-          <div className="flex items-center gap-3 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-green-200/50">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-            <Users className="w-4 h-4 text-green-600" />
-            <span className="font-medium text-green-700">50,000+ Users</span>
-          </div>
-          <div className="flex items-center gap-3 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-blue-200/50">
-            <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-            <Shield className="w-4 h-4 text-blue-600" />
-            <span className="font-medium text-blue-700">100% Private</span>
-          </div>
-          <div className="flex items-center gap-3 bg-white/50 backdrop-blur-sm rounded-full px-4 py-2 border border-purple-200/50">
-            <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
-            <Star className="w-4 h-4 text-purple-600" />
-            <span className="font-medium text-purple-700">Open Source</span>
+          {/* MIT License */}
+          <div className="flex flex-wrap items-center justify-center gap-8 text-sm">
+            <div className={badge({ color: "emerald" })}>
+              <div className={dot({ color: "emerald" })}></div>
+              <Award className={icon({ color: "emerald" })} />
+              <span className={text({ color: "emerald" })}>MIT License</span>
+            </div>
+
+            <div className={badge({ color: "blue" })}>
+              <div className={dot({ color: "blue" })}></div>
+              <Shield className={icon({ color: "blue" })} />
+              <span className={text({ color: "blue" })}>100% Private</span>
+            </div>
+
+            <div className={badge({ color: "purple" })}>
+              <div className={dot({ color: "purple" })}></div>
+              <Star className={icon({ color: "purple" })} />
+              <span className={text({ color: "purple" })}>Open Source</span>
+            </div>
           </div>
         </div>
 

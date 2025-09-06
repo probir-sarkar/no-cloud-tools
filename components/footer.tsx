@@ -6,7 +6,7 @@ import { GithubIcon, TwitterIcon } from "./icons";
 export function Footer() {
   return (
     <footer className="border-t border-divider bg-muted/50">
-      <div className="container py-8 md:py-12 mx-auto">
+      <div className="container max-w-7xl py-8 md:py-12 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold">PDF Tools</h3>

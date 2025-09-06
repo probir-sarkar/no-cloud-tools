@@ -4,7 +4,9 @@
     "": {
       "name": "next-app-template",
       "dependencies": {
+        "@heroui/badge": "^2.2.16",
         "@heroui/button": "2.2.25",
+        "@heroui/chip": "^2.2.21",
         "@heroui/code": "2.2.19",
         "@heroui/input": "2.4.26",
         "@heroui/kbd": "2.2.20",
@@ -98,7 +100,11 @@
 
     "@heroui/aria-utils": ["@heroui/aria-utils@2.2.22", "", { "dependencies": { "@heroui/system": "2.4.21", "@react-aria/utils": "3.30.1", "@react-stately/collections": "3.12.7", "@react-types/overlays": "3.9.1", "@react-types/shared": "3.32.0" }, "peerDependencies": { "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-Aovpy71dCApKQl0JZrBBFGWy4pG5mFke3Q/E/4R6/vVC1weYjv84D+7+Gi82A60rBOK95DtntOFyuGVc7ddU0A=="],
 
+    "@heroui/badge": ["@heroui/badge@2.2.16", "", { "dependencies": { "@heroui/react-utils": "2.1.13", "@heroui/shared-utils": "2.1.11" }, "peerDependencies": { "@heroui/system": ">=2.4.18", "@heroui/theme": ">=2.4.17", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-gW0aVdic+5jwDhifIB8TWJ6170JOOzLn7Jkomj2IsN2G+oVrJ7XdJJGr2mYkoeNXAwYlYVyXTANV+zPSGKbx7A=="],
+
     "@heroui/button": ["@heroui/button@2.2.25", "", { "dependencies": { "@heroui/react-utils": "2.1.13", "@heroui/ripple": "2.2.19", "@heroui/shared-utils": "2.1.11", "@heroui/spinner": "2.2.22", "@heroui/use-aria-button": "2.2.19", "@react-aria/focus": "3.21.1", "@react-aria/interactions": "3.25.5", "@react-types/shared": "3.32.0" }, "peerDependencies": { "@heroui/system": ">=2.4.18", "@heroui/theme": ">=2.4.17", "framer-motion": ">=11.5.6 || >=12.0.0-alpha.1", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-NkaWXxeFQKf0NlnI/rN/ojXbycZfjwEdNXIHH55b6IwlPne06VRvLpLaM2Eahyit4IhuUvgB8SjjWgV/z6BPoA=="],
+
+    "@heroui/chip": ["@heroui/chip@2.2.21", "", { "dependencies": { "@heroui/react-utils": "2.1.13", "@heroui/shared-icons": "2.1.10", "@heroui/shared-utils": "2.1.11", "@react-aria/focus": "3.21.1", "@react-aria/interactions": "3.25.5" }, "peerDependencies": { "@heroui/system": ">=2.4.18", "@heroui/theme": ">=2.4.17", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-vE1XbVL4U92RjuXZWnQgcPIFQ9amLEDCVTK5IbCF2MJ7Xr6ofDj6KTduauCCH1H40p9y1zk6+fioqvxDEoCgDw=="],
 
     "@heroui/code": ["@heroui/code@2.2.19", "", { "dependencies": { "@heroui/react-utils": "2.1.13", "@heroui/shared-utils": "2.1.11", "@heroui/system-rsc": "2.3.18" }, "peerDependencies": { "@heroui/theme": ">=2.4.17", "react": ">=18 || >=19.0.0-rc.0", "react-dom": ">=18 || >=19.0.0-rc.0" } }, "sha512-CiJv12GWVWlFBXCHIOyPfCWly+YfXoD5qyoolsnI47BO69LJnbn+8fkvcTNA0O6MsQdWvOLZoy6ffjGW7S1smw=="],
 
